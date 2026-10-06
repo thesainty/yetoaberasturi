@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jacinto "Yeto" Aberasturi Jr. | Digital Creative & Creative Communications</title>
+<meta name="description" content="Digital creative and communications professional managing content for a five-brand business group in Mandaue City, Cebu — Social media, graphic design, video editing, campaign concepts, photography & AI visuals.">
+<meta name="theme-color" content="#1B2A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={
+  darkMode:'class',
+  theme:{
+    extend:{
+      colors:{
+        navy:'#1B2A3A',
+        orange:'#F0A030',
+        teal:'#2A8C8C',
+        offwhite:'#F7F8FA'
+      },
+      fontFamily:{
+        pop:['Poppins','sans-serif'],
+        inter:['Inter','sans-serif'],
+        pixel:['"Press Start 2P"','monospace'],
+        retro:['VT323','monospace'],
+        mono:['"JetBrains Mono"','monospace']
+      }
+    }
+  }
+}
+</script>
+<style>
+:root{
+  --navy:#1B2A3A;
+  --navy-dark:#0D1721;
+  --orange:#F0A030;
+  --orange-hover:#d98b20;
+  --teal:#2A8C8C;
+  --teal-light:#3fc5c5;
+  --offwhite:#F7F8FA;
+  --bg:#0d1721;
+  --card:#1B2A3A;
+  --card-soft:#22354a;
+  --text:#eef2f7;
+  --muted:#94a3b8;
+  --border:#2a4158;
+  --shadow:0 12px 30px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15);
+}
+html.light{
+  --bg:#F7F8FA;
+  --card:#ffffff;
+  --card-soft:#f1f5f9;
+  --text:#1B2A3A;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --shadow:0 10px 30px rgba(27,42,58,0.08), 0 4px 10px rgba(27,42,58,0.06);
+}
+*{scroll-behavior:smooth;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);transition:background .3s,color .3s;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;letter-spacing:-0.02em}
+.font-pixel{font-family:'Press Start 2P',monospace}
+.font-retro{font-family:'VT323',monospace}
+.font-mono{font-family:'JetBrains Mono',monospace}
+.soft-card{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);transition:.3s}
+.soft-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.22)}
+.pixel-box{border:3px solid #000;box-shadow:5px 5px 0 #000;position:relative}
+.pixel-btn{border:3px solid #000;box-shadow:4px 4px 0 #000;transition:all .08s;cursor:pointer;user-select:none}
+.pixel-btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #000}
+.pixel-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 #000}
+.accent-line{width:56px;height:4px;background:var(--orange);border-radius:999px;margin:14px auto 0}
+.reveal{opacity:0;transform:translateY(22px);transition:all .65s cubic-bezier(.22,1,.36,1)}
+.reveal.active{opacity:1;transform:translateY(0)}
+.scanlines::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%),linear-gradient(90deg,rgba(255,0,0,0.02),rgba(0,255,0,0.01),rgba(0,0,255,0.02));background-size:100% 3px,6px 100%;pointer-events:none;opacity:.45;z-index:2}
+.pixel-grid{background-color:var(--bg);background-image:radial-gradient(#22374d 14%,transparent 16%),radial-gradient(#22374d 14%,transparent 16%);background-size:18px 18px;background-position:0 0,9px 9px}
+html.light .pixel-grid{background-color:#f7f8fa;background-image:radial-gradient(#dbe4ef 14%,transparent 16%),radial-gradient(#dbe4ef 14%,transparent 16%)}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.bob{animation:bob 2s ease-in-out infinite}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.blink{animation:blink .9s infinite}
+@keyframes coinPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+.coin{animation:coinPulse 1s steps(3) infinite}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#0d1721}
+::-webkit-scrollbar-thumb{background:var(--orange);border:2px solid #000}
+html.light ::-webkit-scrollbar-track{background:#e2e8f0}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+/* Print Stylesheet for PDF generation */
+@media print {
+  #topNav, .fixed, #miniGameContainer, #questModal, #retroToast, button {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .soft-card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+</style>
+</head>
+<body class="pixel-grid selection:bg-[#F0A030] selection:text-[#1B2A3A]">
+
+<!-- ==================== STICKY HUD NAV ==================== -->
+<header id="topNav" class="sticky top-0 z-50 backdrop-blur-xl bg-[#0d1721]/90 border-b-[3px] border-black">
+  <div class="max-w-[1280px] mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-3">
+    <!-- Brand -->
+    <a href="#hero" class="flex items-center gap-3 group">
+      <div class="w-9 h-9 rounded-xl bg-[#F0A030] border-2 border-black flex items-center justify-center font-pixel text-[11px] font-bold text-black shadow-[3px_3px_0_#000] group-hover:bg-[#2A8C8C] group-hover:text-white transition">YA</div>
+      <div class="hidden sm:block leading-none">
+        <div class="flex items-center gap-2">
+          <span class="font-pixel text-[10px] text-[#F0A030]">YETO</span>
+          <span class="hidden md:inline text-[9px] font-pixel bg-[#2A8C8C] text-white px-1.5 py-0.5 border border-black">LVL 20+</span>
+        </div>
+        <div class="text-[11px] font-semibold text-white tracking-wide font-pop">Jacinto Aberasturi Jr.</div>
+        <div class="text-[10px] text-slate-400 hidden lg:block">Creative Comms • Mandaue City, Cebu</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex items-center gap-1 text-[12px] font-semibold">
+      <a href="#focus" class="px-3 py-2 rounded-full hover:bg-white/10 text-slate-200 transition">Focus</a>
+      <a href="#brands" class="px-3 py-2 rounded-full hover:bg-white/10 text-slate-200 transition">Brands <span class="bg-[#F0A030] text-black text-[10px] px-1.5 py-0.5 rounded-full ml-1">5</span></a>
+      <a href="#meta-hub" class="px-3 py-2 rounded-full hover:bg-white/10 text-sky-300 transition">Meta Suite</a>
+      <a href="#hosaku-quest" class="px-3 py-2 rounded-full hover:bg-white/10 text-emerald-300 transition">Hosaku</a>
+      <a href="#experience" class="px-3 py-2 rounded-full hover:bg-white/10 text-slate-200 transition">Experience</a>
+      <a href="index-executive.html" class="px-3 py-2 rounded-full bg-purple-900/60 text-purple-200 hover:bg-purple-800 text-[11px] font-mono border border-purple-500/40 transition">Executive Deck ↗</a>
+      <a href="#contact" class="ml-1 px-5 py-2.5 rounded-full bg-[#F0A030] text-black font-bold hover:bg-[#d98b20] transition shadow-[3px_3px_0_#000] border-2 border-black">Contact</a>
+    </nav>
+
+    <!-- Controls -->
+    <div class="flex items-center gap-2">
+      <!-- coin HUD - hidden on mobile -->
+      <div class="hidden md:flex items-center gap-3 bg-black/60 border-2 border-white/10 rounded-full px-3 py-1.5">
+        <span class="flex items-center gap-1.5 text-amber-400 font-pixel text-[10px]"><i class="fa-solid fa-coins coin"></i><span id="coinCount">500</span>G</span>
+        <span class="w-px h-4 bg-white/10"></span>
+        <span class="flex items-center gap-1 text-emerald-400 font-pixel text-[9px]"><i class="fa-solid fa-heart"></i>100%</span>
+        <span class="hidden xl:flex items-center gap-1 text-sky-300 font-pixel text-[9px]"><i class="fa-solid fa-shield"></i>5 BRANDS</span>
+      </div>
+      <button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle light dark mode" class="w-9 h-9 rounded-full bg-white/10 border border-white/10 text-white flex items-center justify-center hover:bg-white/20 transition">
+        <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+      </button>
+      <button id="sfxToggle" onclick="toggleAudio()" aria-label="Toggle sound" class="w-9 h-9 rounded-full bg-[#F0A030] border-2 border-black text-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:translate-y-[1px] hover:shadow-[1px_1px_0_#000] transition">
+        <i id="sfxIcon" class="fa-solid fa-volume-high text-xs"></i>
+      </button>
+      <button onclick="triggerJumpGame()" class="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#2A8C8C] text-white font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000] hover:translate-y-[1px] hover:shadow-[1px_1px_0_#000] transition">
+        <i class="fa-solid fa-gamepad"></i> PLAY
+      </button>
+      <button id="menuBtn" onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 rounded-full bg-white text-black flex items-center justify-center border-2 border-black shadow-[2px_2px_0_#000]">
+        <i class="fa-solid fa-bars text-sm"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-[#0d1721] px-4 py-4 space-y-1">
+    <a href="#focus" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/10 text-white font-medium">Creative Focus</a>
+    <a href="#brands" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/10 text-white font-medium">Brands Managed (5)</a>
+    <a href="#meta-hub" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/10 text-sky-300 font-medium">Meta Business Suite Hub</a>
+    <a href="#hosaku-quest" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl bg-emerald-900/40 text-emerald-300 font-medium border border-emerald-800">★ Hosaku Agri-Biotech Venture</a>
+    <a href="#experience" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/10 text-white font-medium">Experience</a>
+    <a href="#capabilities" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl hover:bg-white/10 text-white font-medium">Capabilities</a>
+    <a href="index-executive.html" class="block px-3 py-2.5 rounded-xl bg-purple-900/40 text-purple-200 font-medium border border-purple-700">⚡ Switch to Executive Deck Edition</a>
+    <a href="#contact" onclick="toggleMobileMenu()" class="block mt-2 text-center px-4 py-3 rounded-full bg-[#F0A030] text-black font-bold border-2 border-black">Contact Me</a>
+    <div class="flex gap-2 pt-2">
+      <a href="https://www.facebook.com/Yeto.Ph" target="_blank" class="flex-1 py-2 rounded-full bg-[#1877F2] text-white text-center text-xs font-bold"><i class="fa-brands fa-facebook mr-1"></i> fb.com/Yeto.Ph</a>
+      <button onclick="downloadResumePrompt()" class="flex-1 py-2 rounded-full bg-white text-black text-center text-xs font-bold border-2 border-black"><i class="fa-solid fa-download mr-1"></i> Print / PDF</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ==================== 1. HERO ==================== -->
+<section id="hero" class="relative max-w-[1280px] mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-6">
+  <div class="soft-card rounded-[28px] sm:rounded-[32px] p-6 sm:p-10 lg:p-12 relative overflow-hidden">
+    <!-- subtle top tape -->
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div class="inline-flex items-center gap-2 bg-black text-amber-400 border border-amber-500/30 rounded-full px-3 py-1 text-[11px] font-pixel tracking-wide">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> WORLD 07 — MANDAUE CITY, CEBU, PH
+        <span class="hidden sm:inline opacity-60">• AVAILABLE FOR COLLAB</span>
+      </div>
+      <a href="index-executive.html" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950 text-purple-300 border border-purple-500/40 font-mono text-[10px] hover:bg-purple-900 transition">
+        <span>⚡ Executive Bento Deck</span> <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+      </a>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-6">
+      <!-- Copy -->
+      <div class="lg:col-span-7">
+        <h1 class="font-pop font-extrabold text-[30px] sm:text-[44px] lg:text-[54px] leading-[0.95] tracking-tight">
+          <span style="color:var(--text)">JACINTO</span><br>
+          <span class="text-[#F0A030]" style="text-shadow:3px 3px 0 #000">ABERASTURI JR.</span>
+          <span class="inline-block ml-2 align-middle bg-[#2A8C8C] text-white font-pixel text-[9px] px-2 py-1 rounded-full border-2 border-black translate-y-[-6px]">YETO</span>
+        </h1>
+        <div class="mt-3 inline-flex flex-wrap items-center gap-2 bg-[var(--card-soft)] border border-[var(--border)] rounded-full px-4 py-2">
+          <span class="w-8 h-8 rounded-full bg-[#F0A030] text-black flex items-center justify-center text-xs"><i class="fa-solid fa-briefcase"></i></span>
+          <span class="font-semibold text-sm" style="color:var(--text)">Creative Communications Staff</span>
+          <span class="hidden sm:inline text-slate-400">|</span>
+          <span class="font-semibold text-sm text-[#2A8C8C]">Digital Creative & Meta Specialist</span>
+        </div>
+
+        <p class="mt-5 text-[16px] sm:text-[17px] leading-relaxed max-w-[60ch]" style="color:var(--muted)">
+          Digital creative and communications professional managing content for a <strong style="color:var(--text)">five-brand business group</strong> in Mandaue City, Cebu. Hands-on work across social media content, graphic design, video editing, campaign concepts, photography, AI-assisted visuals, and unified brand management.
+        </p>
+
+        <!-- Action row -->
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#brands" onclick="playBeep(440,'square')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#F0A030] text-black font-bold text-sm border-2 border-black shadow-[4px_4px_0_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition">
+            <i class="fa-solid fa-layer-group"></i> View My Work
+          </a>
+          <a href="#contact" onclick="playBeep(600,'triangle')" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[var(--card)] text-[var(--text)] font-bold text-sm border-2 border-[var(--border)] hover:bg-[var(--card-soft)] transition">
+            <i class="fa-regular fa-envelope"></i> Contact Me
+          </a>
+          <button onclick="downloadResumePrompt()" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full bg-[#2A8C8C] text-white font-bold text-sm border-2 border-black shadow-[4px_4px_0_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition">
+            <i class="fa-solid fa-print"></i> PDF / Print
+          </button>
+        </div>
+
+        <!-- Contact & Profile Chips -->
+        <div class="mt-6 flex flex-wrap items-center gap-2 text-[12px] font-semibold">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-slate-300">
+            <i class="fa-solid fa-location-dot text-[#F0A030]"></i> Mandaue City, Cebu
+          </span>
+          <a href="tel:09262233333" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-slate-300 hover:text-[#F0A030] transition">
+            <i class="fa-solid fa-phone text-[#2A8C8C]"></i> 0926-22-33333
+          </a>
+          <a href="mailto:yeto.aberasturi@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-slate-300 hover:text-[#F0A030] transition">
+            <i class="fa-solid fa-envelope text-[#F0A030]"></i> yeto.aberasturi@gmail.com
+          </a>
+          <a href="https://yetoaberasturi.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-slate-300 hover:text-[#2A8C8C] transition">
+            <i class="fa-solid fa-globe text-[#2A8C8C]"></i> yetoaberasturi.com
+          </a>
+          <a href="https://www.facebook.com/Yeto.Ph" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1877F2]/20 border border-[#1877F2]/50 text-blue-300 hover:bg-[#1877F2] hover:text-white transition">
+            <i class="fa-brands fa-facebook"></i> fb.com/Yeto.Ph
+          </a>
+        </div>
+      </div>
+
+      <!-- Headshot Avatar with Live Photo / Sprite Toggle -->
+      <div class="lg:col-span-5 flex flex-col items-center">
+        <div class="relative">
+          <div class="relative w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] rounded-full p-[6px] bg-gradient-to-br from-[#F0A030] via-[#2A8C8C] to-[#1B2A3A] shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+            <div id="headshotWrap" class="w-full h-full rounded-full bg-[var(--card)] overflow-hidden relative flex items-center justify-center border-[4px] border-black cursor-pointer group" onclick="pokeHero()" title="Tap to interact!">
+              
+              <!-- Real Photo Mode (Default with smooth switch) -->
+              <img id="realPhotoImg" src="profile.jpg" alt="Jacinto Aberasturi Jr." class="w-full h-full object-cover relative z-10 transition duration-300 group-hover:scale-105" onerror="this.style.display='none'; document.getElementById('pixelSpriteWrap').classList.remove('hidden');">
+
+              <!-- Pixel Art Mode fallback / toggle -->
+              <div id="pixelSpriteWrap" class="hidden absolute inset-0 bg-gradient-to-br from-slate-800 to-[#1B2A3A] flex items-center justify-center z-10">
+                <svg viewBox="0 0 16 16" class="w-[160px] h-[160px] drop-shadow-[0_6px_0_rgba(0,0,0,0.4)] bob" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                  <rect x="4" y="1" width="8" height="2" fill="#0f172a"/>
+                  <rect x="3" y="2" width="10" height="2" fill="#1e293b"/>
+                  <rect x="4" y="4" width="8" height="5" fill="#fde6c8"/>
+                  <rect x="5" y="5" width="2" height="1" fill="#0f172a"/>
+                  <rect x="9" y="5" width="2" height="1" fill="#0f172a"/>
+                  <rect x="4" y="5" width="3" height="1" fill="#2A8C8C" opacity="0.85"/>
+                  <rect x="9" y="5" width="3" height="1" fill="#2A8C8C" opacity="0.85"/>
+                  <rect x="7" y="5" width="2" height="1" fill="#2A8C8C"/>
+                  <rect x="7" y="7" width="2" height="1" fill="#e11d48"/>
+                  <rect x="3" y="9" width="10" height="4" fill="#F0A030"/>
+                  <rect x="6" y="9" width="4" height="4" fill="#1B2A3A"/>
+                  <rect x="3" y="4" width="1" height="3" fill="#fbbf24"/>
+                  <rect x="12" y="4" width="1" height="3" fill="#fbbf24"/>
+                  <rect x="2" y="10" width="2" height="2" fill="#fde6c8"/>
+                  <rect x="12" y="10" width="2" height="2" fill="#2A8C8C"/>
+                  <rect x="4" y="13" width="3" height="3" fill="#0f172a"/>
+                  <rect x="9" y="13" width="3" height="3" fill="#0f172a"/>
+                </svg>
+              </div>
+
+              <!-- Overlay Badge -->
+              <div class="absolute bottom-5 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur text-white font-pixel text-[8px] px-3 py-1.5 rounded-full border border-white/20 whitespace-nowrap z-20">TAP FOR SOUND / DIALOGUE</div>
+              <div id="pokeSpeech" class="hidden absolute top-8 left-1/2 -translate-x-1/2 bg-white text-black font-pixel text-[9px] px-3 py-2 rounded-xl border-2 border-black shadow-[4px_4px_0_#000] z-30 whitespace-nowrap">Let's create content!</div>
+            </div>
+          </div>
+
+          <!-- Mode Switch Button: Photo vs 8-Bit Pixel -->
+          <button onclick="toggleAvatarMode(event)" class="absolute -bottom-2 right-2 bg-black text-white hover:text-amber-400 font-pixel text-[8px] px-3 py-1.5 rounded-full border-2 border-white/20 shadow-[2px_2px_0_#000] z-30 flex items-center gap-1.5">
+            <i class="fa-solid fa-repeat"></i> <span id="avatarModeLabel">SPRITE MODE</span>
+          </button>
+
+          <!-- Floating Badges -->
+          <div class="absolute -top-2 -right-2 bg-[#F0A030] text-black font-pixel text-[9px] px-3 py-1.5 rounded-full border-2 border-black shadow-[3px_3px_0_#000] z-20">5 BRANDS • 1 DESK</div>
+          <div class="absolute -bottom-2 -left-4 bg-white text-black font-bold text-xs px-4 py-2 rounded-full border-2 border-black shadow-[3px_3px_0_#000] flex items-center gap-2 z-20">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Based in Cebu, PH
+          </div>
+        </div>
+
+        <p class="mt-6 text-center text-xs font-pixel tracking-wide" style="color:var(--muted)">[ TAP AVATAR FOR DIALOGUE & BONUS COINS ]</p>
+        
+        <!-- XP Bar -->
+        <div class="w-[300px] sm:w-[340px] mt-3 bg-black rounded-full p-1 border-2 border-black flex items-center gap-2">
+          <div class="flex-1 h-2.5 rounded-full bg-zinc-800 overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-emerald-400 to-lime-400" style="width:99%"></div>
+          </div>
+          <span class="font-pixel text-[8px] text-white pr-2">EXP 99%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated Counter Strip -->
+  <div id="counterStrip" class="mt-6 grid grid-cols-1 sm:grid-cols-4 gap-3 sm:gap-4">
+    <div class="soft-card rounded-2xl p-5 text-center">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-600 flex items-center justify-center mx-auto text-lg"><i class="fa-solid fa-building"></i></div>
+      <div class="font-pop font-extrabold text-3xl mt-2" style="color:var(--text)"><span class="counter" data-target="5">0</span><span class="text-[#F0A030]">+</span></div>
+      <div class="font-bold text-sm" style="color:var(--text)">Brands Managed</div>
+      <div class="text-xs mt-1" style="color:var(--muted)">Active Facebook & IG pages</div>
+    </div>
+    <div class="soft-card rounded-2xl p-5 text-center">
+      <div class="w-10 h-10 rounded-xl bg-teal-500/15 text-teal-600 flex items-center justify-center mx-auto text-lg"><i class="fa-solid fa-industry"></i></div>
+      <div class="font-pop font-extrabold text-3xl mt-2" style="color:var(--text)"><span class="counter" data-target="5">0</span></div>
+      <div class="font-bold text-sm" style="color:var(--text)">Industries</div>
+      <div class="text-xs mt-1" style="color:var(--muted)">Heavy B2B to Emergency Ops</div>
+    </div>
+    <div class="soft-card rounded-2xl p-5 text-center">
+      <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-600 flex items-center justify-center mx-auto text-lg"><i class="fa-solid fa-tower-broadcast"></i></div>
+      <div class="font-pop font-extrabold text-3xl mt-2" style="color:var(--text)"><span class="counter" data-target="100">0</span><span>%</span></div>
+      <div class="font-bold text-sm" style="color:var(--text)">Content Delivery</div>
+      <div class="text-xs mt-1" style="color:var(--muted)">Meta Business Suite queue</div>
+    </div>
+    <div class="soft-card rounded-2xl p-5 text-center">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-600 flex items-center justify-center mx-auto text-lg"><i class="fa-solid fa-award"></i></div>
+      <div class="font-pop font-extrabold text-3xl mt-2" style="color:var(--text)"><span class="counter" data-target="20">0</span><span>+</span></div>
+      <div class="font-bold text-sm" style="color:var(--text)">Years Experience</div>
+      <div class="text-xs mt-1" style="color:var(--muted)">Since 1999 • Creative + Sales + HR</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 2. CREATIVE FOCUS ==================== -->
+<section id="focus" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2A8C8C] text-white font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000]"><i class="fa-solid fa-sparkles"></i> SKILL TREE & ABILITIES</span>
+    <h2 class="mt-3 text-[28px] sm:text-4xl font-extrabold" style="color:var(--text)">Creative Focus</h2>
+    <div class="accent-line"></div>
+    <p class="mt-3 text-[15px] leading-relaxed" style="color:var(--muted)">End-to-end creative production — from concept, visual hierarchy and prompt engineering to final publish and performance monitoring.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-[#F0A030] text-black flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-share-nodes"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Social Media Content</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Reels, carousels, graphics & high-conversion copy tailored per channel.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-[#2A8C8C] text-white flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-bezier-curve"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Graphic Design</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Banners, flyers, price sheets, pitch decks & brand identity assets.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-rose-500 text-white flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-film"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Video Editing</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Short-form cuts, demos, sound sync, captions & pacing for social.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-amber-400 text-black flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-lightbulb"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Campaign Concepts</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Seasonal promos, activations, storytelling & audience hooks.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-sky-500 text-white flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-camera"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Photography</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Machinery in action, property walkthroughs & clean post-work.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-violet-600 text-white flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">AI Image Creation</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Prompt-engineered visuals, rapid mockups & concept renders.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-[#F0A030] text-black flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Brand Management</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Voice, visuals & standards cohesive across 5 distinct entities.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+    <button onclick="equipSkill(this)" class="soft-card rounded-2xl p-5 text-left group reveal">
+      <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg border-2 border-black shadow-[2px_2px_0_#000] group-hover:scale-105 transition"><i class="fa-solid fa-calendar-check"></i></div>
+      <h3 class="font-bold mt-4 text-[15px]" style="color:var(--text)">Content Planning & Publishing</h3>
+      <p class="text-[13px] leading-relaxed mt-1.5" style="color:var(--muted)">Calendars, Meta Business Suite scheduling & performance checks.</p>
+      <span class="inline-flex items-center gap-1 mt-3 text-[11px] font-bold text-emerald-600"><i class="fa-solid fa-bolt"></i> EQUIPPED</span>
+    </button>
+  </div>
+
+  <!-- Production Stack -->
+  <div id="tools" class="mt-8 soft-card rounded-[20px] p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 reveal">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-black text-[#F0A030] flex items-center justify-center border-2 border-black"><i class="fa-solid fa-toolbox text-sm"></i></div>
+      <div>
+        <div class="font-bold text-sm" style="color:var(--text)">Production Stack</div>
+        <div class="text-xs" style="color:var(--muted)">Daily armed weapon set</div>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F0A030] text-black font-bold text-sm border-2 border-black shadow-[2px_2px_0_#000]"><i class="fa-solid fa-palette"></i> Canva Pro</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2A8C8C] text-white font-bold text-sm border-2 border-black shadow-[2px_2px_0_#000]"><i class="fa-solid fa-scissors"></i> CapCut</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-600 text-white font-bold text-sm border-2 border-black shadow-[2px_2px_0_#000]"><i class="fa-solid fa-brain"></i> AI Image Prompting</span>
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1877F2] text-white font-bold text-sm border-2 border-black shadow-[2px_2px_0_#000]"><i class="fa-brands fa-meta"></i> Meta Business Suite</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. BRANDS MANAGED ==================== -->
+<section id="brands" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
+  <div class="soft-card rounded-[28px] p-6 sm:p-10">
+    <div class="text-center max-w-3xl mx-auto reveal">
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F0A030] text-black font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000]">ACTIVE REALMS UNDER MANAGEMENT</span>
+      <h2 class="mt-3 text-[28px] sm:text-4xl font-extrabold" style="color:var(--text)">Brands Managed</h2>
+      <div class="accent-line" style="background:#2A8C8C"></div>
+      <p class="mt-3 font-retro text-[22px] sm:text-[26px] leading-none text-amber-500">"Five brands, five industries, five audiences, one creative desk."</p>
+      <p class="mt-1 font-pixel text-[8px] tracking-wide" style="color:var(--muted)">[ TAP A CARD TO VIEW SAMPLE WORK • TELEPORT TO LIVE FACEBOOK PAGES ]</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+      <!-- 01 HESREAL -->
+      <article class="soft-card rounded-2xl overflow-hidden flex flex-col reveal">
+        <div class="h-1.5 bg-amber-500"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-600 border border-amber-500/20 text-[11px] font-bold"><i class="fa-solid fa-truck-monster text-[10px]"></i> Heavy Equipment</span>
+            <span class="font-pixel text-[9px]" style="color:var(--muted)">#01</span>
+          </div>
+          <h3 class="font-bold text-[17px] mt-3" style="color:var(--text)">HESREAL Equipment Rental</h3>
+          <p class="text-xs font-semibold text-amber-600">Heavy equipment rental • B2B Contractors</p>
+          <p class="text-[13px] leading-relaxed mt-3" style="color:var(--muted)">Fleet spec sheets, rental catalogs, operator demos & equipment showcase reels for contractor logistics.</p>
+          <button onclick="openQuestModal('HESREAL Equipment Rental','Heavy Equipment Rental','Excavator spec sheets, crane rental catalogs, operator demo reels, machine rate cards, site safety banners','https://www.facebook.com/hesrealequipment')" class="mt-4 w-full text-left rounded-xl border-2 border-dashed border-amber-500/30 bg-amber-500/5 p-3 flex items-center gap-3 hover:border-amber-500 hover:bg-amber-500/10 transition">
+            <span class="w-9 h-9 rounded-xl bg-amber-500 text-black flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-images text-xs"></i></span>
+            <span><span class="block font-bold text-xs" style="color:var(--text)">View Sample Work</span><span class="block text-[11px]" style="color:var(--muted)">Catalogs • spec sheets • reels</span></span>
+            <i class="fa-solid fa-chevron-right ml-auto text-amber-600 text-xs"></i>
+          </button>
+          <a href="https://www.facebook.com/hesrealequipment" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-[#1877F2] text-white font-bold text-xs hover:bg-blue-600 transition"><i class="fa-brands fa-facebook"></i> Visit Facebook Page</a>
+        </div>
+      </article>
+
+      <!-- 02 A-Plus -->
+      <article class="soft-card rounded-2xl overflow-hidden flex flex-col reveal">
+        <div class="h-1.5 bg-red-500"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-500/15 text-red-600 border border-red-500/20 text-[11px] font-bold"><i class="fa-solid fa-truck-pickup text-[10px]"></i> Emergency Ops</span>
+            <span class="font-pixel text-[9px]" style="color:var(--muted)">#02</span>
+          </div>
+          <h3 class="font-bold text-[17px] mt-3" style="color:var(--text)">A-Plus Towing Services</h3>
+          <p class="text-xs font-semibold text-red-600">Towing & roadside services 24/7</p>
+          <p class="text-[13px] leading-relaxed mt-3" style="color:var(--muted)">24/7 hotline posters, trust badges, rescue spotlights & roadside breakdown visuals that convert in emergencies.</p>
+          <button onclick="openQuestModal('A-Plus Towing Services','Towing & Roadside Services','24/7 emergency dispatch graphics, high-visibility rescue videos, flatbed towing banners, highway breakdown guides','https://www.facebook.com/aplustowingservices')" class="mt-4 w-full text-left rounded-xl border-2 border-dashed border-red-500/30 bg-red-500/5 p-3 flex items-center gap-3 hover:border-red-500 hover:bg-red-500/10 transition">
+            <span class="w-9 h-9 rounded-xl bg-red-500 text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-phone-volume text-xs"></i></span>
+            <span><span class="block font-bold text-xs" style="color:var(--text)">View Sample Work</span><span class="block text-[11px]" style="color:var(--muted)">Hotline posters • rescue videos</span></span>
+            <i class="fa-solid fa-chevron-right ml-auto text-red-600 text-xs"></i>
+          </button>
+          <a href="https://www.facebook.com/aplustowingservices" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-[#1877F2] text-white font-bold text-xs hover:bg-blue-600 transition"><i class="fa-brands fa-facebook"></i> Visit Facebook Page</a>
+        </div>
+      </article>
+
+      <!-- 03 Rockmaster -->
+      <article class="soft-card rounded-2xl overflow-hidden flex flex-col reveal">
+        <div class="h-1.5 bg-emerald-500"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-600 border border-emerald-500/20 text-[11px] font-bold"><i class="fa-solid fa-mountain text-[10px]"></i> Quarry & Build</span>
+            <span class="font-pixel text-[9px]" style="color:var(--muted)">#03</span>
+          </div>
+          <h3 class="font-bold text-[17px] mt-3" style="color:var(--text)">Rockmaster Dev Corp</h3>
+          <p class="text-xs font-semibold text-emerald-600">Sand & aggregates supply</p>
+          <p class="text-[13px] leading-relaxed mt-3" style="color:var(--muted)">Bulk aggregate promos, grade specs, stockpile updates & contractor showcases with logistics convoy visuals.</p>
+          <button onclick="openQuestModal('Rockmaster Dev Corp','Sand & Aggregates Supply','Aggregate grading charts, bulk supply rate sheets, quarry convoy reels, batching plant partnership flyers','https://www.facebook.com/RockmasterDevCorp')" class="mt-4 w-full text-left rounded-xl border-2 border-dashed border-emerald-500/30 bg-emerald-500/5 p-3 flex items-center gap-3 hover:border-emerald-500 hover:bg-emerald-500/10 transition">
+            <span class="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-cubes text-xs"></i></span>
+            <span><span class="block font-bold text-xs" style="color:var(--text)">View Sample Work</span><span class="block text-[11px]" style="color:var(--muted)">Price charts • infographics</span></span>
+            <i class="fa-solid fa-chevron-right ml-auto text-emerald-600 text-xs"></i>
+          </button>
+          <a href="https://www.facebook.com/RockmasterDevCorp" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-[#1877F2] text-white font-bold text-xs hover:bg-blue-600 transition"><i class="fa-brands fa-facebook"></i> Visit Facebook Page</a>
+        </div>
+      </article>
+
+      <!-- 04 Pump n Go -->
+      <article class="soft-card rounded-2xl overflow-hidden flex flex-col reveal">
+        <div class="h-1.5 bg-[#2A8C8C]"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-teal-500/15 text-teal-600 border border-teal-500/20 text-[11px] font-bold"><i class="fa-solid fa-gas-pump text-[10px]"></i> Bulk Fuel</span>
+            <span class="font-pixel text-[9px]" style="color:var(--muted)">#04</span>
+          </div>
+          <h3 class="font-bold text-[17px] mt-3" style="color:var(--text)">Pump n' Go Fuel Supply</h3>
+          <p class="text-xs font-semibold text-teal-600">Bulk commercial diesel supply</p>
+          <p class="text-[13px] leading-relaxed mt-3" style="color:var(--muted)">B2B diesel delivery notices, price updates, fleet fueling & safety compliance sheets for commercial clients.</p>
+          <button onclick="openQuestModal('Pump n\' Go Fuel Supply','Bulk Diesel Logistics','Fleet diesel delivery announcements, transparent fuel pricing sheets, on-site fueling depot graphics, cost comparison carousels','https://www.facebook.com/PumpnGoFuel')" class="mt-4 w-full text-left rounded-xl border-2 border-dashed border-teal-500/30 bg-teal-500/5 p-3 flex items-center gap-3 hover:border-teal-500 hover:bg-teal-500/10 transition">
+            <span class="w-9 h-9 rounded-xl bg-[#2A8C8C] text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-oil-can text-xs"></i></span>
+            <span><span class="block font-bold text-xs" style="color:var(--text)">View Sample Work</span><span class="block text-[11px]" style="color:var(--muted)">Diesel sheets • delivery banners</span></span>
+            <i class="fa-solid fa-chevron-right ml-auto text-teal-600 text-xs"></i>
+          </button>
+          <a href="https://www.facebook.com/PumpnGoFuel" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-[#1877F2] text-white font-bold text-xs hover:bg-blue-600 transition"><i class="fa-brands fa-facebook"></i> Visit Facebook Page</a>
+        </div>
+      </article>
+
+      <!-- 05 SpaceDepot -->
+      <article class="soft-card rounded-2xl overflow-hidden flex flex-col reveal">
+        <div class="h-1.5 bg-indigo-500"></div>
+        <div class="p-5 flex-1 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-indigo-500/15 text-indigo-600 border border-indigo-500/20 text-[11px] font-bold"><i class="fa-solid fa-building text-[10px]"></i> Real Estate</span>
+            <span class="font-pixel text-[9px]" style="color:var(--muted)">#05</span>
+          </div>
+          <h3 class="font-bold text-[17px] mt-3" style="color:var(--text)">SpaceDepot.ph Real Estate</h3>
+          <p class="text-xs font-semibold text-indigo-600">Commercial warehouse leasing</p>
+          <p class="text-[13px] leading-relaxed mt-3" style="color:var(--muted)">Warehouse listings, tenant acquisition campaigns, walkthrough videos, site maps & lease highlights.</p>
+          <button onclick="openQuestModal('SpaceDepot.ph Real Estate','Commercial Real Estate','Warehouse spec listings, floor dimension layouts, commercial lot walkthrough videos, industrial lease announcements','https://www.facebook.com/spacedepot.ph')" class="mt-4 w-full text-left rounded-xl border-2 border-dashed border-indigo-500/30 bg-indigo-500/5 p-3 flex items-center gap-3 hover:border-indigo-500 hover:bg-indigo-500/10 transition">
+            <span class="w-9 h-9 rounded-xl bg-indigo-500 text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-city text-xs"></i></span>
+            <span><span class="block font-bold text-xs" style="color:var(--text)">View Sample Work</span><span class="block text-[11px]" style="color:var(--muted)">Listings • site tours</span></span>
+            <i class="fa-solid fa-chevron-right ml-auto text-indigo-600 text-xs"></i>
+          </button>
+          <a href="https://www.facebook.com/spacedepot.ph" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-[#1877F2] text-white font-bold text-xs hover:bg-blue-600 transition"><i class="fa-brands fa-facebook"></i> Visit Facebook Page</a>
+        </div>
+      </article>
+
+      <!-- Meta Hub Summary Box -->
+      <article class="rounded-2xl overflow-hidden flex flex-col bg-[#111a25] text-white border-2 border-black shadow-[6px_6px_0_#000] reveal">
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="inline-flex items-center gap-2 text-[#F0A030] font-pixel text-[9px]"><i class="fa-solid fa-tower-broadcast"></i> META DISPATCH HUB</div>
+          <h3 class="font-bold text-lg mt-2">Central Meta Suite Command</h3>
+          <p class="text-[13px] leading-relaxed mt-2 text-slate-300">All 5 corporate brands synced via <strong class="text-white">Meta Business Suite</strong>. One central desk, unified calendar, real-time analytics & responsive inbox triage.</p>
+          <div class="mt-4 bg-white/5 rounded-xl p-3 border border-white/10 space-y-1.5 font-pixel text-[9px]">
+            <div class="flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-check"></i> 5/5 PAGES CONNECTED</div>
+            <div class="flex items-center gap-2 text-emerald-400"><i class="fa-solid fa-check"></i> SCHEDULED & BOOSTED ADS</div>
+            <div class="flex items-center gap-2 text-sky-400"><i class="fa-solid fa-chart-line"></i> WEEKLY METRICS REVIEWS</div>
+          </div>
+          <a href="#meta-hub" class="mt-4 inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-[#F0A030] text-black font-bold text-xs border-2 border-black"><i class="fa-solid fa-chart-pie"></i> Inspect Meta Operations</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4. META BUSINESS SUITE HUB ==================== -->
+<section id="meta-hub" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-6">
+  <div class="rounded-[28px] bg-[#111a25] border-[3px] border-black shadow-[6px_6px_0_#000] p-6 sm:p-10 reveal">
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1877F2] text-white font-pixel text-[9px] border-2 border-black">
+          <i class="fa-brands fa-meta"></i> META BUSINESS SUITE SPECIALIST
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Enterprise Multi-Page Command Center</h2>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-pixel">
+        <span class="px-3 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">● 5 PAGES SYNCED</span>
+        <span class="px-3 py-1.5 rounded-full bg-sky-500/20 text-sky-400 border border-sky-500/30">IG INTEGRATED</span>
+      </div>
+    </div>
+
+    <!-- Overview Text -->
+    <p class="mt-5 text-[15px] leading-relaxed text-slate-300 max-w-4xl">
+      Proficient in using <strong>Meta Business Suite</strong> to manage Facebook and Instagram business pages, including daily content scheduling, post publishing, content calendar management, audience engagement, and performance monitoring. Experienced in planning campaigns, managing boosted posts and ads, reviewing insights, and maintaining consistent brand presence across all Meta platforms.
+    </p>
+
+    <!-- 4 Operational Pillars Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="w-9 h-9 rounded-xl bg-amber-500 text-black flex items-center justify-center font-bold text-sm border-2 border-black">01</div>
+        <h3 class="font-bold text-white text-[15px] mt-3">📅 Scheduling & Publishing</h3>
+        <p class="text-xs text-slate-300 mt-2 leading-relaxed">Multi-page synchronized calendars, optimal time targeting for B2B contractors, and automated publishing across FB & IG.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="w-9 h-9 rounded-xl bg-sky-500 text-white flex items-center justify-center font-bold text-sm border-2 border-black">02</div>
+        <h3 class="font-bold text-white text-[15px] mt-3">🎯 Meta Ads & Boosting</h3>
+        <p class="text-xs text-slate-300 mt-2 leading-relaxed">Audience geographic geotargeting (Cebu, Visayas), conversion optimization, lead generation & emergency hotline boosting.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="w-9 h-9 rounded-xl bg-purple-500 text-white flex items-center justify-center font-bold text-sm border-2 border-black">03</div>
+        <h3 class="font-bold text-white text-[15px] mt-3">📊 Insights & Analytics</h3>
+        <p class="text-xs text-slate-300 mt-2 leading-relaxed">Weekly performance audits, organic reach vs. paid tracking, engagement rate testing, and continuous creative refinement.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="w-9 h-9 rounded-xl bg-emerald-500 text-black flex items-center justify-center font-bold text-sm border-2 border-black">04</div>
+        <h3 class="font-bold text-white text-[15px] mt-3">💬 Inbox & Community</h3>
+        <p class="text-xs text-slate-300 mt-2 leading-relaxed">Unified message monitoring, rapid inquiry replies, automated FAQ responder setup, and lead routing to sales desks.</p>
+      </div>
+    </div>
+
+    <!-- Live Telemetry Simulator Box -->
+    <div class="mt-6 rounded-2xl bg-black/60 border-2 border-white/10 p-5 font-mono text-xs">
+      <div class="flex items-center justify-between text-slate-400 border-b border-white/10 pb-2 mb-3">
+        <span class="font-pixel text-[9px] text-[#F0A030]"><i class="fa-solid fa-terminal mr-1"></i> META_SUITE_DISPATCH_QUEUE</span>
+        <span class="text-emerald-400">STATUS: ALL SYSTEMS NOMINAL</span>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+          <div class="text-amber-400 font-bold">🚜 HESREAL Equipment</div>
+          <div class="text-slate-400 text-[11px] mt-1">Status: Post Scheduled (Excavator Demo)</div>
+          <div class="text-emerald-400 text-[10px] mt-1">Target: B2B Contractors (Cebu Region)</div>
+        </div>
+        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+          <div class="text-red-400 font-bold">🛻 A-Plus Towing Services</div>
+          <div class="text-slate-400 text-[11px] mt-1">Status: Boost Active (24/7 Hotline)</div>
+          <div class="text-emerald-400 text-[10px] mt-1">Target: Highway Motorists & Fleets</div>
+        </div>
+        <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+          <div class="text-teal-400 font-bold">⛽ Pump n' Go Fuel</div>
+          <div class="text-slate-400 text-[11px] mt-1">Status: Queue OK (Diesel Price Sheet)</div>
+          <div class="text-emerald-400 text-[10px] mt-1">Target: Commercial Transport Co-ops</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. HOSAKU SPECIAL VENTURE ==================== -->
+<section id="hosaku-quest" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-6">
+  <div class="rounded-[28px] overflow-hidden border-[3px] border-black shadow-[6px_6px_0_#000] reveal" style="background: linear-gradient(135deg, #0f2a1d 0%, #1B2A3A 60%, #111a25 100%)">
+    <div class="p-6 sm:p-8 lg:p-10">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <span class="inline-flex items-center gap-2 bg-[#4ade80] text-black font-pixel text-[9px] px-3 py-1.5 rounded-full border-2 border-black font-bold"><i class="fa-solid fa-seedling"></i> SPECIAL EXPEDITION — AGRI-BIOTECH VENTURE</span>
+        <a href="https://www.facebook.com/ABSHosaku" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1877F2] text-white font-bold text-xs border-2 border-black shadow-[3px_3px_0_#000]"><i class="fa-brands fa-facebook"></i> Visit ABS Hosaku Page</a>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 mt-6 items-start">
+        <div class="lg:col-span-8">
+          <h2 class="font-pop font-extrabold text-2xl sm:text-3xl text-white leading-tight">Co-Founder / Sales & Marketing Head</h2>
+          <div class="mt-1 font-semibold text-[#4ade80] text-sm">Applied Bio-Solutions Philippines Inc. (Hosaku) <span class="text-white/60 font-normal">| May 2015 – 2023</span></div>
+
+          <div class="mt-5 rounded-2xl bg-black/40 border border-white/10 p-5 space-y-3 backdrop-blur">
+            <p class="text-[15px] leading-relaxed text-slate-200">Co-founded an agricultural biotechnology venture focused on introducing <strong class="text-[#4ade80]">Hosaku microbial inoculant</strong> to the Philippine market. Led sales, marketing, product positioning, customer education, and business-development initiatives targeting farmers, distributors, and agricultural stakeholders.</p>
+            <p class="text-[14px] leading-relaxed text-slate-300">Promoted science-based and sustainable farming solutions, developed market relationships, and pursued new distribution opportunities while navigating the challenges of building and sustaining an emerging agricultural brand.</p>
+            <p class="text-[11px] font-pixel leading-relaxed text-white/50 border-t border-white/10 pt-3">*Main operations ran 2015–2019; continued client engagement, farmer consultation, product advocacy & post-COVID revival efforts through 2023.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3 mt-5">
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">1. Co-founder / Entrepreneurship</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Helped establish commercial direction against entrenched multinational competitors.</div>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">2. Sales Leadership</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Pitched Hosaku to co-ops, agricultural dealers & plantation heads nationwide.</div>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">3. Product Education</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Demystified microbial technology & soil microbiology for practical farmers.</div>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">4. Business Development</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Sourced new regional markets, distributors & provincial trade partnerships.</div>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">5. Relationship Building</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Hands-on field work — soil test trials & farm visits, not just office decks.</div>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-3">
+              <div class="font-bold text-xs text-[#4ade80]">6. Entrepreneurial Grit</div>
+              <div class="text-xs text-slate-300 mt-1 leading-relaxed">Competed strategically and built customer loyalty with agile, resourceful execution.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="rounded-2xl bg-black/50 border-2 border-emerald-800 p-6 text-center">
+            <div class="w-20 h-20 rounded-2xl bg-[#4ade80] text-black border-[3px] border-black flex items-center justify-center text-3xl mx-auto shadow-[4px_4px_0_#000]"><i class="fa-solid fa-wheat-awn"></i></div>
+            <div class="font-pixel text-xs text-white mt-3">HOSAKU INOCULANT</div>
+            <div class="text-xs text-emerald-400">Microbial Agri-Tech • Flagship Product</div>
+            <div class="mt-4 rounded-xl bg-white text-black p-3 text-xs leading-relaxed border-2 border-black">
+              <strong>Market:</strong> Filipino farmers & agricultural dealers<br>
+              <strong>Mission:</strong> Science-based, sustainable farming — educating growers on soil microbiology and natural yield optimization.
+            </div>
+            <div class="mt-4 inline-flex items-center gap-2 bg-[#F0A030] text-black font-pixel text-[8px] px-3 py-2 rounded-full border-2 border-black"><i class="fa-solid fa-trophy"></i> ACHIEVEMENT: CO-FOUNDER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. WORK EXPERIENCE ==================== -->
+<section id="experience" class="max-w-[1100px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
+  <div class="text-center reveal">
+    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500 text-white font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000]">CAREER PROGRESSION TREE</span>
+    <h2 class="mt-3 text-[28px] sm:text-4xl font-extrabold" style="color:var(--text)">Work Experience Log</h2>
+    <div class="accent-line"></div>
+    <p class="mt-3 text-sm" style="color:var(--muted)">Comprehensive record of creative communications, corporate sales, HR, and venture roles.</p>
+  </div>
+
+  <div class="relative mt-8 pl-6 sm:pl-10 border-l-[3px] border-[#F0A030]/40 space-y-6">
+    <!-- Current: HESREAL -->
+    <div class="relative reveal">
+      <span class="absolute -left-[29px] sm:-left-[46px] top-2 w-7 h-7 rounded-full bg-[#F0A030] border-[3px] border-black flex items-center justify-center text-black text-xs shadow-[2px_2px_0_#000]">★</span>
+      <div class="soft-card rounded-2xl p-6 border-l-4 border-l-[#F0A030]">
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-[#F0A030] text-black font-bold text-xs border-2 border-black">SEP 2025 – PRESENT • ACTIVE MAIN QUEST</span>
+          <span class="px-3 py-1 rounded-full bg-[#2A8C8C] text-white font-bold text-xs">Five-Brand Group</span>
+        </div>
+        <h3 class="font-bold text-lg mt-3" style="color:var(--text)">Creative Communications Staff</h3>
+        <div class="font-semibold text-sm text-[#F0A030]">HESREAL Group of Companies</div>
+        <ul class="mt-4 space-y-2.5 text-[14px] leading-relaxed" style="color:var(--muted)">
+          <li class="flex gap-2"><span class="text-[#F0A030] mt-1">▸</span><span>Manage and create content for five companies under HESREAL Group, tailoring creative direction to different industries and audiences.</span></li>
+          <li class="flex gap-2"><span class="text-[#F0A030] mt-1">▸</span><span>Produce social media graphics, short-form videos, campaign concepts, photography, and AI-assisted image assets for marketing and brand communication.</span></li>
+          <li class="flex gap-2"><span class="text-[#F0A030] mt-1">▸</span><span>Support brand consistency, content planning, creative development, and social publishing using Canva, CapCut, AI image tools, and Meta Business Suite.</span></li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-xs font-semibold" style="color:var(--muted)">Canva</span>
+          <span class="px-3 py-1 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-xs font-semibold" style="color:var(--muted)">CapCut</span>
+          <span class="px-3 py-1 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-xs font-semibold" style="color:var(--muted)">AI Visuals</span>
+          <span class="px-3 py-1 rounded-full bg-[var(--card-soft)] border border-[var(--border)] text-xs font-semibold" style="color:var(--muted)">Meta Business Suite</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aboitiz MEGAWIDE -->
+    <div class="relative reveal">
+      <span class="absolute -left-[26px] sm:-left-[43px] top-3 w-5 h-5 rounded-full bg-[#2A8C8C] border-2 border-black flex items-center justify-center text-white text-[9px]">◆</span>
+      <div class="soft-card rounded-2xl p-5">
+        <div class="text-[11px] font-bold tracking-wide text-[#2A8C8C]">MAY 2024 – AUG 2024 • PROJECT BASED</div>
+        <h4 class="font-bold mt-1" style="color:var(--text)">S4/HANA SAP Migration Project</h4>
+        <div class="text-xs" style="color:var(--muted)">Aboitiz GMR MEGAWIDE Cebu Airport Corporation</div>
+        <p class="text-xs mt-2 leading-relaxed" style="color:var(--muted)">Supported data validation, legacy record checking, and workflow coordination for Cebu International Airport's enterprise SAP transition.</p>
+      </div>
+    </div>
+
+    <!-- Hosaku Timeline Summary -->
+    <div class="relative reveal">
+      <span class="absolute -left-[26px] sm:-left-[43px] top-3 w-5 h-5 rounded-full bg-emerald-500 border-2 border-black flex items-center justify-center text-white text-[9px]">◆</span>
+      <div class="soft-card rounded-2xl p-5 border border-emerald-500/20">
+        <div class="flex flex-wrap gap-2 justify-between items-center">
+          <span class="text-[11px] font-bold tracking-wide text-emerald-600">MAY 2015 – 2023 • ENTREPRENEURIAL VENTURE</span>
+          <a href="#hosaku-quest" class="text-xs font-bold text-emerald-600 hover:underline">View full story →</a>
+        </div>
+        <h4 class="font-bold mt-1" style="color:var(--text)">Co-Founder / Sales & Marketing Head</h4>
+        <div class="text-xs" style="color:var(--muted)">Applied Bio-Solutions Philippines Inc. (Hosaku) — Flagship: Hosaku microbial inoculant</div>
+        <p class="text-xs mt-2 leading-relaxed" style="color:var(--muted)">Spearheaded commercialization & farmer education nationwide; built distribution networks and dealer partnerships in emerging agri-tech.</p>
+      </div>
+    </div>
+
+    <!-- Philam Life -->
+    <div class="relative reveal">
+      <span class="absolute -left-[26px] sm:-left-[43px] top-3 w-5 h-5 rounded-full bg-slate-400 border-2 border-black flex items-center justify-center text-white text-[9px]">◆</span>
+      <div class="soft-card rounded-2xl p-5">
+        <div class="text-[11px] font-bold tracking-wide" style="color:var(--muted)">SEP 2011 – MAY 2014 • CORPORATE SALES</div>
+        <h4 class="font-bold mt-1" style="color:var(--text)">Business Development Manager</h4>
+        <div class="text-xs" style="color:var(--muted)">PHILAM Life (AIA Group)</div>
+        <p class="text-xs mt-2 leading-relaxed" style="color:var(--muted)">Handled corporate consultative sales, group benefits presentations, executive consultations, and client policy retention.</p>
+      </div>
+    </div>
+
+    <!-- Older Roles Expandable -->
+    <div class="reveal">
+      <button id="toggleOlderBtn" onclick="toggleOlderRoles()" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-black text-white font-pixel text-[10px] border-2 border-black shadow-[3px_3px_0_#000] hover:translate-y-[1px] hover:shadow-[1px_1px_0_#000] transition">
+        <i id="toggleOlderIcon" class="fa-solid fa-chevron-down text-[10px]"></i>
+        <span id="toggleOlderText">EXPAND 4 EARLIER ROLES (1999 – 2008)</span>
+      </button>
+      <div id="olderRolesBox" class="hidden mt-4 grid sm:grid-cols-2 gap-3">
+        <div class="soft-card rounded-xl p-4">
+          <div class="font-pixel text-[9px] text-[#2A8C8C]">NOV 2007 – MAY 2008 • HR & ADMIN</div>
+          <div class="font-bold text-sm mt-1" style="color:var(--text)">Admin / HR Officer</div>
+          <div class="text-xs" style="color:var(--muted)">Global Connect eSolutions — Davao-based Call Center</div>
+          <p class="text-xs mt-2 text-slate-400">Recruitment screening, new-hire onboarding, 201 file management, and shift attendance tracking.</p>
+        </div>
+        <div class="soft-card rounded-xl p-4">
+          <div class="font-pixel text-[9px] text-amber-500">MAR 2003 – JAN 2006 • UTILITY ADMIN</div>
+          <div class="font-bold text-sm mt-1" style="color:var(--text)">Admin Staff</div>
+          <div class="text-xs" style="color:var(--muted)">Visayan Electric Company (VECO)</div>
+          <p class="text-xs mt-2 text-slate-400">Customer account record updates, corporate correspondence, and inter-office departmental record maintenance.</p>
+        </div>
+        <div class="soft-card rounded-xl p-4">
+          <div class="font-pixel text-[9px] text-emerald-500">MAR 2001 – SEP 2002 • PAYROLL & FIELD</div>
+          <div class="font-bold text-sm mt-1" style="color:var(--text)">Personnel Staff / Payroll Assistant</div>
+          <div class="text-xs" style="color:var(--muted)">Arn Builders Contractor</div>
+          <p class="text-xs mt-2 text-slate-400">Construction timekeeping, DTR hours computation, and statutory compliance for on-site personnel.</p>
+        </div>
+        <div class="soft-card rounded-xl p-4">
+          <div class="font-pixel text-[9px] text-red-500">OCT 1999 – JAN 2001 • ROUTE SALES</div>
+          <div class="font-bold text-sm mt-1" style="color:var(--text)">Junior Sales</div>
+          <div class="text-xs" style="color:var(--muted)">Coca-Cola Products Distributor</div>
+          <p class="text-xs mt-2 text-slate-400">Territory route visits, store stock checks, merchandising, and retail client relationship development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. PHILOSOPHY QUOTE ==================== -->
+<section id="perspective" class="max-w-[1100px] mx-auto px-4 sm:px-6 py-6">
+  <div class="rounded-[28px] bg-[#111a25] border-[3px] border-black shadow-[6px_6px_0_#000] p-8 sm:p-10 text-center relative overflow-hidden reveal">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-[#F0A030] rounded-full"></div>
+    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F0A030] text-black font-pixel text-[9px] border-2 border-black">CREATIVE + BUSINESS PERSPECTIVE</span>
+    <div class="text-[#F0A030] text-2xl mt-4"><i class="fa-solid fa-quote-left"></i></div>
+    <blockquote class="font-retro text-[26px] sm:text-[30px] leading-[1.15] text-white max-w-3xl mx-auto">
+      "Combines practical content production with experience in sales, business development, administration/HR, entrepreneurship, and corporate project work, useful for creating communication that connects creative ideas with real business needs."
+    </blockquote>
+    <div class="mt-6 flex items-center justify-center gap-3">
+      <span class="w-8 h-[2px] bg-[#2A8C8C]"></span>
+      <span class="font-bold text-xs tracking-widest text-[#3fc5c5]">JACINTO "YETO" ABERASTURI JR.</span>
+      <span class="w-8 h-[2px] bg-[#2A8C8C]"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. CAPABILITIES & INDUSTRY ==================== -->
+<section id="capabilities" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-10">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center gap-3 border-b border-[var(--border)] pb-3 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-[#F0A030] text-black flex items-center justify-center border-2 border-black"><i class="fa-solid fa-screwdriver-wrench text-sm"></i></div>
+        <h3 class="font-bold" style="color:var(--text)">Additional Capabilities</h3>
+      </div>
+      <div class="space-y-2.5">
+        <div class="flex gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <i class="fa-solid fa-pen-nib text-[#F0A030] mt-1"></i>
+          <div><div class="font-bold text-xs" style="color:var(--text)">Logo Design & Vector Marks</div><div class="text-xs" style="color:var(--muted)">Brand lockups, typography & custom icon sets</div></div>
+        </div>
+        <div class="flex gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <i class="fa-solid fa-wand-magic-sparkles text-[#F0A030] mt-1"></i>
+          <div><div class="font-bold text-xs" style="color:var(--text)">Photo Editing & Restoration</div><div class="text-xs" style="color:var(--muted)">Color grading, cleanup, retouching & vintage repair</div></div>
+        </div>
+        <div class="flex gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <i class="fa-solid fa-globe text-[#F0A030] mt-1"></i>
+          <div><div class="font-bold text-xs" style="color:var(--text)">Web Design / Hosting / Domain Basics</div><div class="text-xs" style="color:var(--muted)">Landing pages, Netlify, DNS & domain routing</div></div>
+        </div>
+        <div class="flex gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <i class="fa-solid fa-chart-line text-[#F0A030] mt-1"></i>
+          <div><div class="font-bold text-xs" style="color:var(--text)">Sales & Marketing Strategy</div><div class="text-xs" style="color:var(--muted)">Client acquisition, pipeline & conversion pitches</div></div>
+        </div>
+        <div class="flex gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <i class="fa-solid fa-laptop-code text-[#F0A030] mt-1"></i>
+          <div><div class="font-bold text-xs" style="color:var(--text)">PC / Laptop Troubleshooting</div><div class="text-xs" style="color:var(--muted)">Hardware maintenance, OS diagnostics & setups</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center gap-3 border-b border-[var(--border)] pb-3 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-[#2A8C8C] text-white flex items-center justify-center border-2 border-black"><i class="fa-solid fa-industry text-sm"></i></div>
+        <h3 class="font-bold" style="color:var(--text)">Industry Coverage</h3>
+      </div>
+      <div class="space-y-2.5">
+        <div class="flex items-center justify-between rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="flex items-center gap-2 font-semibold text-sm" style="color:var(--text)"><i class="fa-solid fa-truck-monster text-[#2A8C8C]"></i> Heavy Equipment Rental</span>
+          <span class="px-2 py-1 rounded-full bg-amber-500/15 text-amber-600 text-[10px] font-bold border border-amber-500/20">INDUSTRIAL</span>
+        </div>
+        <div class="flex items-center justify-between rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="flex items-center gap-2 font-semibold text-sm" style="color:var(--text)"><i class="fa-solid fa-truck-pickup text-[#2A8C8C]"></i> Towing & Roadside</span>
+          <span class="px-2 py-1 rounded-full bg-red-500/15 text-red-600 text-[10px] font-bold border border-red-500/20">EMERGENCY</span>
+        </div>
+        <div class="flex items-center justify-between rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="flex items-center gap-2 font-semibold text-sm" style="color:var(--text)"><i class="fa-solid fa-mountain text-[#2A8C8C]"></i> Sand & Aggregates</span>
+          <span class="px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-600 text-[10px] font-bold border border-emerald-500/20">CONSTRUCTION</span>
+        </div>
+        <div class="flex items-center justify-between rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="flex items-center gap-2 font-semibold text-sm" style="color:var(--text)"><i class="fa-solid fa-gas-pump text-[#2A8C8C]"></i> Bulk Diesel Supply</span>
+          <span class="px-2 py-1 rounded-full bg-sky-500/15 text-sky-600 text-[10px] font-bold border border-sky-500/20">ENERGY</span>
+        </div>
+        <div class="flex items-center justify-between rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="flex items-center gap-2 font-semibold text-sm" style="color:var(--text)"><i class="fa-solid fa-building text-[#2A8C8C]"></i> Real Estate</span>
+          <span class="px-2 py-1 rounded-full bg-indigo-500/15 text-indigo-600 text-[10px] font-bold border border-indigo-500/20">COMMERCIAL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 9. EDUCATION ==================== -->
+<section id="education" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-6">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center gap-3 border-b border-[var(--border)] pb-3 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-[#F0A030] text-black flex items-center justify-center border-2 border-black"><i class="fa-solid fa-graduation-cap text-sm"></i></div>
+        <h3 class="font-bold" style="color:var(--text)">Education Log</h3>
+      </div>
+      <div class="rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-4">
+        <div class="font-pixel text-[9px] text-[#F0A030]">1994 – 1999 • DEGREE CONFERRED</div>
+        <div class="font-bold mt-1 text-base" style="color:var(--text)">Bachelor of Science in Psychology</div>
+        <div class="text-sm text-[#2A8C8C] font-semibold">University of San Carlos</div>
+        <p class="text-xs mt-2 leading-relaxed" style="color:var(--muted)">Behavioral & psychological principles applied to visual hierarchy, conversion layout, trust-building, and customer messaging psychology.</p>
+      </div>
+    </div>
+    <div class="soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center gap-3 border-b border-[var(--border)] pb-3 mb-4">
+        <div class="w-9 h-9 rounded-xl bg-[#2A8C8C] text-white flex items-center justify-center border-2 border-black"><i class="fa-solid fa-certificate text-sm"></i></div>
+        <h3 class="font-bold" style="color:var(--text)">Selected Training</h3>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between items-center rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <div><div class="font-bold text-xs" style="color:var(--text)">Salesmanship Training</div><div class="text-xs" style="color:var(--muted)">Zuellig Pharmaceuticals</div></div><span class="font-pixel text-[9px] text-[#2A8C8C]">2001</span>
+        </div>
+        <div class="flex justify-between items-center rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <div><div class="font-bold text-xs" style="color:var(--text)">PC Builders Seminar & Troubleshooting</div><div class="text-xs" style="color:var(--muted)">Midtown Hotel</div></div><span class="font-pixel text-[9px] text-[#2A8C8C]">1999</span>
+        </div>
+        <div class="flex justify-between items-center rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <div><div class="font-bold text-xs" style="color:var(--text)">Leadership & Self-Awareness</div><div class="text-xs" style="color:var(--muted)">University of San Carlos</div></div><span class="font-pixel text-[9px] text-[#2A8C8C]">1998</span>
+        </div>
+        <div class="flex justify-between items-center rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <div><div class="font-bold text-xs" style="color:var(--text)">Group Processing Seminar</div><div class="text-xs" style="color:var(--muted)">Professional Development</div></div><span class="font-pixel text-[9px] text-[#2A8C8C]">1995</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 10. OPEN TO ==================== -->
+<section id="open-to" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 text-center reveal">
+  <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F0A030] text-black font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000]">READY TO CO-OP • OPEN TO ROLES</span>
+  <h3 class="mt-3 text-2xl sm:text-3xl font-extrabold" style="color:var(--text)">Open To Roles In</h3>
+  <div class="flex flex-wrap justify-center gap-2.5 mt-6 max-w-4xl mx-auto">
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-solid fa-gamepad text-[#F0A030]"></i> Digital Creative</span>
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-solid fa-bullhorn text-[#2A8C8C]"></i> Creative Communications</span>
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-solid fa-hashtag text-emerald-600"></i> Social Media Content</span>
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-solid fa-pen-ruler text-amber-600"></i> Graphic Design</span>
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-solid fa-video text-sky-600"></i> Content Creation & Video</span>
+    <span class="soft-card px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs border-2 border-black"><i class="fa-brands fa-meta text-blue-500"></i> Meta Business Suite Specialist</span>
+  </div>
+</section>
+
+<!-- ==================== 11. CONTACT ==================== -->
+<section id="contact" class="max-w-[1280px] mx-auto px-4 sm:px-6 py-10 sm:py-14">
+  <div class="text-center reveal">
+    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2A8C8C] text-white font-pixel text-[9px] border-2 border-black shadow-[2px_2px_0_#000]">TRANSMISSION FREQUENCY</span>
+    <h2 class="mt-3 text-[28px] sm:text-4xl font-extrabold" style="color:var(--text)">Get In Touch</h2>
+    <div class="accent-line"></div>
+    <p class="mt-3 text-sm" style="color:var(--muted)">Let's discuss creative communications, brand campaigns, Meta operations & visual executions.</p>
+  </div>
+
+  <div class="grid lg:grid-cols-12 gap-6 mt-8 items-start">
+    <!-- Left: Profile Info -->
+    <div class="lg:col-span-5 soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center gap-2 font-pixel text-[10px] text-[#F0A030]"><i class="fa-solid fa-address-card"></i> PLAYER PROFILE</div>
+      <div class="mt-4 space-y-3">
+        <div class="flex items-center gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="w-9 h-9 rounded-xl bg-[#F0A030] text-black flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-location-dot text-xs"></i></span>
+          <div><div class="font-pixel text-[9px]" style="color:var(--muted)">BASE LOCATION</div><div class="font-bold text-sm" style="color:var(--text)">Mandaue City, Cebu, Philippines</div></div>
+        </div>
+        <div class="flex items-center gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="w-9 h-9 rounded-xl bg-[#2A8C8C] text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-phone text-xs"></i></span>
+          <div><div class="font-pixel text-[9px]" style="color:var(--muted)">HOTLINE</div><a href="tel:09262233333" class="font-bold text-sm text-[#F0A030] hover:underline">0926-22-33333</a></div>
+        </div>
+        <div class="flex items-center gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="w-9 h-9 rounded-xl bg-zinc-800 text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-envelope text-xs"></i></span>
+          <div class="min-w-0"><div class="font-pixel text-[9px]" style="color:var(--muted)">DIRECT INBOX</div><a href="mailto:yeto.aberasturi@gmail.com" class="font-bold text-sm text-[#2A8C8C] break-all hover:underline">yeto.aberasturi@gmail.com</a></div>
+        </div>
+        <div class="flex items-center gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="w-9 h-9 rounded-xl bg-[#F0A030] text-black flex items-center justify-center border-2 border-black shrink-0"><i class="fa-solid fa-globe text-xs"></i></span>
+          <div><div class="font-pixel text-[9px]" style="color:var(--muted)">WEB DOMAIN</div><a href="https://yetoaberasturi.com" target="_blank" rel="noopener" class="font-bold text-sm hover:underline" style="color:var(--text)">yetoaberasturi.com</a></div>
+        </div>
+        <div class="flex items-center gap-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] p-3">
+          <span class="w-9 h-9 rounded-xl bg-[#1877F2] text-white flex items-center justify-center border-2 border-black shrink-0"><i class="fa-brands fa-facebook text-xs"></i></span>
+          <div><div class="font-pixel text-[9px]" style="color:var(--muted)">FACEBOOK PROFILE</div><a href="https://www.facebook.com/Yeto.Ph" target="_blank" rel="noopener" class="font-bold text-sm text-[#60a5fa] hover:underline">fb.com/Yeto.Ph</a></div>
+        </div>
+      </div>
+
+      <div id="resume-download" class="mt-6 pt-4 border-t border-[var(--border)]">
+        <button onclick="downloadResumePrompt()" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#F0A030] text-black font-bold text-sm border-2 border-black shadow-[4px_4px_0_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition"><i class="fa-solid fa-download"></i> Save as PDF / Print</button>
+        <p class="text-[10px] font-pixel text-center mt-2" style="color:var(--muted)">[ NETLIFY-READY • MOBILE OPTIMIZED ]</p>
+      </div>
+
+      <div class="mt-6">
+        <div class="font-pixel text-[9px] text-amber-600 flex items-center gap-1.5"><i class="fa-brands fa-facebook"></i> MANAGED FACEBOOK PAGES</div>
+        <div class="grid gap-2 mt-2">
+          <a href="https://www.facebook.com/hesrealequipment" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] hover:border-[#F0A030] transition text-xs font-semibold" style="color:var(--text)">HESREAL Equipment Rental <i class="fa-solid fa-arrow-up-right-from-square text-[#F0A030]"></i></a>
+          <a href="https://www.facebook.com/aplustowingservices" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] hover:border-[#F0A030] transition text-xs font-semibold" style="color:var(--text)">A-Plus Towing Services <i class="fa-solid fa-arrow-up-right-from-square text-[#F0A030]"></i></a>
+          <a href="https://www.facebook.com/RockmasterDevCorp" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] hover:border-[#F0A030] transition text-xs font-semibold" style="color:var(--text)">Rockmaster Dev Corp <i class="fa-solid fa-arrow-up-right-from-square text-[#F0A030]"></i></a>
+          <a href="https://www.facebook.com/PumpnGoFuel" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] hover:border-[#F0A030] transition text-xs font-semibold" style="color:var(--text)">Pump n' Go Fuel Supply <i class="fa-solid fa-arrow-up-right-from-square text-[#F0A030]"></i></a>
+          <a href="https://www.facebook.com/spacedepot.ph" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-[var(--card-soft)] border border-[var(--border)] hover:border-[#F0A030] transition text-xs font-semibold" style="color:var(--text)">SpaceDepot.ph Real Estate <i class="fa-solid fa-arrow-up-right-from-square text-[#F0A030]"></i></a>
+          <a href="https://www.facebook.com/ABSHosaku" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 hover:border-emerald-500 transition text-xs font-bold text-emerald-700">ABS Hosaku Agri-Biotech <i class="fa-solid fa-arrow-up-right-from-square text-emerald-600"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Netlify-Ready & Direct Gmail Dispatch Form -->
+    <div class="lg:col-span-7 soft-card rounded-2xl p-6 reveal">
+      <div class="flex items-center justify-between border-b border-[var(--border)] pb-3 mb-4">
+        <div class="flex items-center gap-2 font-bold text-sm" style="color:var(--text)"><i class="fa-solid fa-envelope-open-text text-[#2A8C8C]"></i> Dispatch Transmission</div>
+        <span class="font-pixel text-[9px] px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-600 border border-emerald-500/20">SENT TO YETO.ABERASTURI@GMAIL.COM</span>
+      </div>
+
+      <form id="contactForm" name="contact" method="POST" action="https://formsubmit.co/yeto.aberasturi@gmail.com" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmission(event)" class="space-y-4">
+        <input type="hidden" name="form-name" value="contact">
+        <!-- FormSubmit / Netlify hidden attributes for instant Gmail delivery -->
+        <input type="hidden" name="_to" value="yeto.aberasturi@gmail.com">
+        <input type="hidden" name="_subject" value="New Interactive Resume Transmission from yetoaberasturi.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <p class="hidden"><label>Don't fill this out if human: <input name="bot-field"></label></p>
+
+        <div>
+          <label for="senderName" class="block font-pixel text-[9px] tracking-wide mb-1" style="color:var(--text)">PLAYER / RECRUITER NAME <span class="text-red-500">*</span></label>
+          <input type="text" id="senderName" name="name" required placeholder="e.g. Commander Maria" class="w-full rounded-xl bg-[var(--card-soft)] border-2 border-[var(--border)] focus:border-[#F0A030] px-4 py-3 text-sm outline-none transition" style="color:var(--text)">
+        </div>
+        <div>
+          <label for="senderEmail" class="block font-pixel text-[9px] tracking-wide mb-1" style="color:var(--text)">RETURN EMAIL <span class="text-red-500">*</span></label>
+          <input type="email" id="senderEmail" name="email" required placeholder="maria@company.com" class="w-full rounded-xl bg-[var(--card-soft)] border-2 border-[var(--border)] focus:border-[#F0A030] px-4 py-3 text-sm outline-none transition" style="color:var(--text)">
+        </div>
+        <div>
+          <label for="senderMessage" class="block font-pixel text-[9px] tracking-wide mb-1" style="color:var(--text)">TRANSMISSION DATA <span class="text-red-500">*</span></label>
+          <textarea id="senderMessage" name="message" rows="5" required placeholder="Detail your project, brand requirements, or creative collaboration..." class="w-full rounded-xl bg-[var(--card-soft)] border-2 border-[var(--border)] focus:border-[#F0A030] px-4 py-3 text-sm outline-none resize-none transition" style="color:var(--text)"></textarea>
+        </div>
+
+        <div id="formSuccess" class="hidden rounded-xl bg-emerald-500/15 border-2 border-emerald-500 text-emerald-500 px-4 py-3 font-bold text-xs flex items-center gap-2"><i class="fa-solid fa-check"></i> TRANSMISSION LOGGED! Dispatched to yeto.aberasturi@gmail.com inbox.</div>
+        <div id="formError" class="hidden rounded-xl bg-red-500/10 border-2 border-red-500 text-red-600 px-4 py-3 font-bold text-xs flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> PLEASE FILL ALL REQUIRED FIELDS CORRECTLY.</div>
+
+        <button type="submit" id="sendBtn" class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#F0A030] text-black font-bold text-sm border-2 border-black shadow-[4px_4px_0_#000] hover:translate-y-[1px] hover:shadow-[2px_2px_0_#000] transition">
+          <i class="fa-solid fa-paper-plane"></i> Transmit Message
+        </button>
+        <p class="text-center text-xs" style="color:var(--muted)">Direct inbox fallback: <a href="mailto:yeto.aberasturi@gmail.com" class="text-[#F0A030] font-semibold hover:underline">yeto.aberasturi@gmail.com</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="mt-6 bg-[#0d1721] border-t-[3px] border-black py-6 px-4">
+  <div class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
+    <div>
+      <div class="font-bold text-sm text-white">Jacinto Aberasturi Jr. | Resume 2026 | <a href="https://yetoaberasturi.com" target="_blank" rel="noopener" class="text-[#F0A030] hover:underline">yetoaberasturi.com</a></div>
+      <div class="text-xs text-slate-400">Mandaue City, Cebu • 8-Bit Pixel RPG Edition • Optimized for Mobile Viewports • Netlify Ready • <a href="index-executive.html" class="text-purple-400 underline">Switch to Executive Deck</a></div>
+    </div>
+    <a href="#hero" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white font-bold text-xs border border-white/10 hover:bg-white/20 transition"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+  </div>
+</footer>
+
+<!-- Mobile sticky controller -->
+<div class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-[#0d1721] border-t-[3px] border-black p-2 flex items-center gap-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
+  <a href="#brands" class="flex-1 inline-flex items-center justify-center gap-1.5 py-3 rounded-full bg-[#2A8C8C] text-white font-bold text-xs border-2 border-black"><i class="fa-solid fa-layer-group"></i> 5 BRANDS</a>
+  <a href="#contact" class="flex-1 inline-flex items-center justify-center gap-1.5 py-3 rounded-full bg-[#F0A030] text-black font-bold text-xs border-2 border-black"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+  <button onclick="downloadResumePrompt()" class="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center border-2 border-black"><i class="fa-solid fa-download"></i></button>
+</div>
+
+<!-- Quest Modal -->
+<div id="questModal" class="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+  <div class="soft-card rounded-[20px] max-w-lg w-full p-6 relative" style="background:var(--card)">
+    <button onclick="closeQuestModal()" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center border-2 border-black font-bold text-xs">✕</button>
+    <span id="modalIndustry" class="inline-flex px-2.5 py-1 rounded-full bg-[#F0A030] text-black font-pixel text-[9px] border-2 border-black">INDUSTRY</span>
+    <h3 id="modalTitle" class="font-bold text-lg mt-2" style="color:var(--text)">Brand Name</h3>
+    <div class="mt-3">
+      <div class="font-pixel text-[9px] tracking-wide" style="color:var(--muted)">SAMPLE DELIVERABLES & ARCHIVES</div>
+      <div id="modalDeliverables" class="mt-2 rounded-xl bg-[var(--card-soft)] border-2 border-[var(--border)] p-3 space-y-1.5 text-xs" style="color:var(--text)"></div>
+    </div>
+    <div class="mt-4 rounded-xl border-2 border-dashed border-[var(--border)] p-4 text-center" style="background:var(--card-soft)">
+      <i class="fa-solid fa-images text-2xl text-[#F0A030]"></i>
+      <div class="font-pixel text-[9px] mt-2" style="color:var(--muted)">[ RETRO DELIVERABLES PREVIEW / ASSET VAULT ]</div>
+      <div class="text-xs mt-1" style="color:var(--muted)">Connect to active assets or Canva galleries when deployed.</div>
+    </div>
+    <div class="mt-5 flex gap-2">
+      <a id="modalFbBtn" href="#" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#1877F2] text-white font-bold text-xs border-2 border-black"><i class="fa-brands fa-facebook"></i> Open Live Facebook Page</a>
+      <button onclick="closeQuestModal()" class="px-5 py-3 rounded-full bg-zinc-800 text-white font-bold text-xs border-2 border-black">Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="retroToast" class="fixed top-[64px] left-1/2 -translate-x-1/2 z-[110] hidden items-center gap-2 bg-black text-amber-400 border-2 border-[#F0A030] px-4 py-2 rounded-full font-pixel text-[10px] shadow-[4px_4px_0_#000]">
+  <i class="fa-solid fa-coins text-amber-400"></i><span id="toastMsg">ACTION PERFORMED</span>
+</div>
+
+<!-- Mini Game Modal (Yeto Jump) -->
+<div id="miniGameContainer" class="fixed inset-0 z-[120] bg-black/90 hidden flex-col items-center justify-center p-4">
+  <div class="soft-card rounded-2xl p-4 max-w-md w-full text-center" style="background:var(--card)">
+    <div class="flex items-center justify-between">
+      <span class="font-pixel text-[10px] text-[#F0A030]">MINI-QUEST: YETO JUMP!</span>
+      <button onclick="closeMiniGame()" class="px-3 py-1 rounded-full bg-red-500 text-white font-bold text-xs border-2 border-black">EXIT ✕</button>
+    </div>
+    <canvas id="gameCanvas" width="320" height="180" class="w-full mt-3 rounded-xl bg-black border-[3px] border-black"></canvas>
+    <p class="font-pixel text-[9px] mt-2" style="color:var(--muted)">TAP CANVAS OR PRESS SPACE TO JUMP OVER DEADLINES!</p>
+    <div class="flex gap-2 justify-center mt-3">
+      <button onclick="restartGame()" class="px-4 py-2 rounded-full bg-emerald-500 text-black font-bold text-xs border-2 border-black">RESTART</button>
+      <button onclick="closeMiniGame()" class="px-4 py-2 rounded-full bg-zinc-800 text-white font-bold text-xs border-2 border-black">CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== Theme Toggle =====
+function toggleTheme(){
+  const isLight=document.documentElement.classList.toggle('light');
+  localStorage.setItem('yeto-theme', isLight?'light':'dark');
+  updateThemeIcon();
+  playBeep(isLight?720:420,'sine',0.12);
+}
+function updateThemeIcon(){
+  const icon=document.getElementById('themeIcon');
+  if(!icon) return;
+  const isLight=document.documentElement.classList.contains('light');
+  icon.className=isLight?'fa-solid fa-sun text-sm':'fa-solid fa-moon text-sm';
+}
+(function(){
+  const saved=localStorage.getItem('yeto-theme');
+  if(saved==='light') document.documentElement.classList.add('light');
+  updateThemeIcon();
+})();
+
+// ===== Mobile Menu =====
+function toggleMobileMenu(){
+  const m=document.getElementById('mobileMenu');
+  const btn=document.getElementById('menuBtn');
+  const isHidden=m.classList.contains('hidden');
+  m.classList.toggle('hidden');
+  if(btn) btn.innerHTML=isHidden?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';
+}
+
+// ===== Audio Synth =====
+let audioCtx=null; let sfxEnabled=true;
+function getAudioContext(){
+  if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  return audioCtx;
+}
+function playBeep(freq=440,type='square',duration=0.08){
+  if(!sfxEnabled) return;
+  try{
+    const ctx=getAudioContext();
+    if(ctx.state==='suspended') ctx.resume();
+    const osc=ctx.createOscillator(), gain=ctx.createGain();
+    osc.type=type; osc.frequency.setValueAtTime(freq,ctx.currentTime);
+    gain.gain.setValueAtTime(0.14,ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+duration);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(); osc.stop(ctx.currentTime+duration);
+  }catch(e){}
+}
+function playCoinSound(){ playBeep(987,'square',0.06); setTimeout(()=>playBeep(1318,'square',0.14),70); }
+function toggleAudio(){
+  sfxEnabled=!sfxEnabled;
+  const ic=document.getElementById('sfxIcon');
+  if(sfxEnabled){ ic.className='fa-solid fa-volume-high text-xs'; playCoinSound(); showToast('SFX: ON 🔊'); }
+  else { ic.className='fa-solid fa-volume-xmark text-xs'; showToast('SFX: MUTED 🔇'); }
+}
+
+// ===== Avatar Mode Switcher (Photo vs Pixel Art) =====
+let avatarIsSprite = false;
+function toggleAvatarMode(e){
+  if(e) e.stopPropagation();
+  avatarIsSprite = !avatarIsSprite;
+  const photo = document.getElementById('realPhotoImg');
+  const sprite = document.getElementById('pixelSpriteWrap');
+  const label = document.getElementById('avatarModeLabel');
+  if(avatarIsSprite){
+    photo.classList.add('hidden');
+    sprite.classList.remove('hidden');
+    label.textContent = 'PHOTO MODE';
+    playCoinSound();
+    showToast('SPRITE MODE EQUIPPED 👾');
+  } else {
+    photo.classList.remove('hidden');
+    sprite.classList.add('hidden');
+    label.textContent = 'SPRITE MODE';
+    playBeep(580, 'sine', 0.1);
+    showToast('PHOTO MODE EQUIPPED 📸');
+  }
+}
+
+// ===== Hero Poke Dialogue =====
+function pokeHero(){
+  playCoinSound();
+  const speech=document.getElementById('pokeSpeech');
+  const coins=document.getElementById('coinCount');
+  const phrases=[
+    "Let's craft viral content!",
+    "5 Brands, 1 Desk, 100% Focus!",
+    "Meta Suite scheduled & synced!",
+    "From Microbials to Heavy Machinery!",
+    "Reels + CapCut + AI visuals ready!",
+    "Psychology + Conversion Design!",
+    "Kaon ta? — Let's build!"
+  ];
+  speech.textContent=phrases[Math.floor(Math.random()*phrases.length)];
+  speech.classList.remove('hidden');
+  if(coins) coins.textContent=parseInt(coins.textContent)+10;
+  showToast(' +10G BONUS COINS!');
+  setTimeout(()=>speech.classList.add('hidden'),2200);
+}
+
+// ===== Skill Equip Interaction =====
+function equipSkill(el){
+  playBeep(660,'square',0.09);
+  el.style.transform='scale(0.97)';
+  setTimeout(()=>el.style.transform='',120);
+  const count=document.getElementById('coinCount');
+  if(count) count.textContent=parseInt(count.textContent)+5;
+  showToast('SKILL EQUIPPED +5G');
+  const check=el.querySelector('.fa-bolt');
+  if(check){ check.classList.add('coin'); setTimeout(()=>check.classList.remove('coin'),600); }
+}
+
+// ===== Quest Modal for Brands =====
+function openQuestModal(title,industry,deliverables,fbLink){
+  playBeep(523,'square');
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modalIndustry').textContent=industry.toUpperCase();
+  document.getElementById('modalFbBtn').href=fbLink;
+  const box=document.getElementById('modalDeliverables');
+  box.innerHTML='';
+  deliverables.split(',').forEach(item=>{
+    const row=document.createElement('div');
+    row.className='flex items-center gap-2';
+    row.innerHTML=`<span class="text-[#F0A030] font-bold">▸</span><span>${item.trim()}</span>`;
+    box.appendChild(row);
+  });
+  const m=document.getElementById('questModal');
+  m.classList.remove('hidden'); m.classList.add('flex');
+  document.body.style.overflow='hidden';
+}
+function closeQuestModal(){
+  playBeep(320,'square');
+  const m=document.getElementById('questModal');
+  m.classList.add('hidden'); m.classList.remove('flex');
+  document.body.style.overflow='';
+}
+document.getElementById('questModal')?.addEventListener('click',e=>{ if(e.target.id==='questModal') closeQuestModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') { closeQuestModal(); closeMiniGame(); } });
+
+// ===== Older Roles Timeline Toggle =====
+function toggleOlderRoles(){
+  playBeep(480,'triangle');
+  const box=document.getElementById('olderRolesBox');
+  const icon=document.getElementById('toggleOlderIcon');
+  const text=document.getElementById('toggleOlderText');
+  const isHidden=box.classList.contains('hidden');
+  if(isHidden){
+    box.classList.remove('hidden');
+    icon.className='fa-solid fa-chevron-up text-[10px]';
+    text.textContent='COLLAPSE EARLIER ARCHIVES (1999 – 2008)';
+  }else{
+    box.classList.add('hidden');
+    icon.className='fa-solid fa-chevron-down text-[10px]';
+    text.textContent='EXPAND 4 EARLIER ROLES (1999 – 2008)';
+  }
+}
+
+// ===== Toast Notification =====
+function showToast(msg){
+  const t=document.getElementById('retroToast');
+  document.getElementById('toastMsg').textContent=msg;
+  t.classList.remove('hidden'); t.classList.add('flex');
+  clearTimeout(window._toastTimer);
+  window._toastTimer=setTimeout(()=>{ t.classList.add('hidden'); t.classList.remove('flex'); },2600);
+}
+function downloadResumePrompt(){
+  playCoinSound();
+  window.print();
+}
+
+// ===== Form Submission Handler (Direct Gmail Dispatch) =====
+async function handleFormSubmission(e){
+  const name=document.getElementById('senderName').value.trim();
+  const email=document.getElementById('senderEmail').value.trim();
+  const msg=document.getElementById('senderMessage').value.trim();
+  const success=document.getElementById('formSuccess');
+  const error=document.getElementById('formError');
+  const btn=document.getElementById('sendBtn');
+  success.classList.add('hidden'); error.classList.add('hidden');
+  
+  if(!name||!email||!msg||!email.includes('@')){
+    e.preventDefault();
+    error.classList.remove('hidden'); playBeep(180,'sawtooth',0.2); showToast('CHECK FORM FIELDS!');
+    return;
+  }
+
+  // If opening directly as a local file (file:///), FormSubmit requires a standard browser POST to trigger activation
+  if(window.location.protocol === 'file:'){
+    // Allow natural HTML form POST so FormSubmit receives the request and generates the activation email to Gmail
+    playCoinSound();
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Activating...';
+    btn.disabled = true;
+    return true; // Let browser submit to https://formsubmit.co/yeto.aberasturi@gmail.com
+  }
+  
+  e.preventDefault();
+  const originalBtnText = btn.innerHTML;
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Transmitting...';
+  btn.disabled = true;
+
+  const form=e.target;
+  const data=new FormData(form);
+
+  try {
+    // 1. Direct delivery to yeto.aberasturi@gmail.com via FormSubmit endpoint
+    const response = await fetch('https://formsubmit.co/ajax/yeto.aberasturi@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: data
+    });
+
+    const resJson = await response.json();
+
+    // 2. Also send background copy to Netlify if hosted on Netlify
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    }).catch(()=>{});
+
+    playCoinSound();
+    showToast('TRANSMITTED TO GMAIL! ✉️');
+    success.classList.remove('hidden');
+    form.reset();
+  } catch(err) {
+    // If AJAX fails or blocked, fallback to native submission
+    form.submit();
+  } finally {
+    btn.innerHTML = originalBtnText;
+    btn.disabled = false;
+  }
+}
+
+// ===== Scroll Reveal & Counters =====
+const revealEls=document.querySelectorAll('.reveal');
+const revealObs=new IntersectionObserver((entries)=>{
+  entries.forEach(ent=>{
+    if(ent.isIntersecting){
+      ent.target.classList.add('active');
+      ent.target.querySelectorAll('.counter').forEach(counterAnimate);
+      revealObs.unobserve(ent.target);
+    }
+  });
+},{threshold:0.15});
+revealEls.forEach(el=>revealObs.observe(el));
+
+function counterAnimate(el){
+  if(el.dataset.animated) return;
+  el.dataset.animated='1';
+  const target=parseInt(el.dataset.target||el.textContent);
+  let cur=0;
+  const step=Math.max(1,Math.ceil(target/28));
+  const int=setInterval(()=>{
+    cur+=step;
+    if(cur>=target){ cur=target; clearInterval(int); playBeep(820,'square',0.06); }
+    el.textContent=cur;
+  },38);
+}
+const counterObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.counter').forEach(counterAnimate);
+      counterObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.4});
+const cs=document.getElementById('counterStrip');
+if(cs) counterObs.observe(cs);
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',()=>{ playBeep(520,'sine',0.06); });
+});
+
+// ===== Mini Game: Yeto Jump Over Deadlines =====
+let gameRunning=false, gameRAF=null, gameState=null;
+function triggerJumpGame(){
+  playCoinSound();
+  const c=document.getElementById('miniGameContainer');
+  c.classList.remove('hidden'); c.classList.add('flex');
+  document.body.style.overflow='hidden';
+  restartGame();
+}
+function closeMiniGame(){
+  playBeep(260,'square');
+  const c=document.getElementById('miniGameContainer');
+  c.classList.add('hidden'); c.classList.remove('flex');
+  document.body.style.overflow='';
+  if(gameRAF) cancelAnimationFrame(gameRAF);
+  gameRunning=false;
+}
+function restartGame(){
+  const canvas=document.getElementById('gameCanvas');
+  const ctx=canvas.getContext('2d');
+  const W=canvas.width, H=canvas.height;
+  gameState={
+    ctx, W, H,
+    player:{x:48,y:H-28,w:18,h:18,vy:0, onGround:true},
+    gravity:0.62, jump:-9.2,
+    obstacles:[],
+    spawnTimer:0,
+    speed:2.6,
+    score:0,
+    gameOver:false
+  };
+  playBeep(880,'square',0.08);
+  if(gameRAF) cancelAnimationFrame(gameRAF);
+  gameRunning=true;
+  loop();
+}
+function loop(){
+  if(!gameRunning) return;
+  const s=gameState;
+  const {ctx,W,H}=s;
+  ctx.fillStyle='#0a0f18'; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#1e293b'; ctx.fillRect(0,H-10,W,10);
+  ctx.fillStyle='#F0A030'; ctx.fillRect(0,H-10,W,2);
+  ctx.fillStyle='rgba(255,255,255,0.05)';
+  for(let x=0;x<W;x+=16) for(let y=0;y<H-10;y+=16) ctx.fillRect(x,y,1,1);
+
+  s.player.vy+=s.gravity;
+  s.player.y+=s.player.vy;
+  if(s.player.y>=H-10 - s.player.h){
+    s.player.y=H-10 - s.player.h; s.player.vy=0; s.player.onGround=true;
+  } else s.player.onGround=false;
+
+  s.spawnTimer--;
+  if(s.spawnTimer<=0){
+    const h=14+Math.random()*14;
+    s.obstacles.push({x:W, y:H-10 - h, w:12+Math.random()*10, h});
+    s.spawnTimer=58 + Math.random()*40;
+    if(s.speed<5) s.speed+=0.06;
+  }
+  s.obstacles.forEach(o=>o.x-=s.speed);
+  s.obstacles=s.obstacles.filter(o=>o.x+o.w> -10);
+
+  for(const o of s.obstacles){
+    if(s.player.x < o.x+o.w && s.player.x + s.player.w > o.x && s.player.y < o.y+o.h && s.player.y + s.player.h > o.y){
+      s.gameOver=true; gameRunning=false;
+      playBeep(150,'sawtooth',0.35);
+      ctx.fillStyle='rgba(0,0,0,0.6)'; ctx.fillRect(0,0,W,H);
+      ctx.fillStyle='#fff'; ctx.font='bold 13px Poppins'; ctx.textAlign='center';
+      ctx.fillText('DEADLINE HIT!',W/2,H/2-6);
+      ctx.font='10px "Press Start 2P"'; ctx.fillStyle='#F0A030';
+      ctx.fillText('SCORE: '+s.score,W/2,H/2+14);
+      ctx.font='9px Inter'; ctx.fillStyle='#94a3b8';
+      ctx.fillText('Tap RESTART to try again',W/2,H/2+30);
+      return;
+    }
+  }
+
+  // Draw player avatar
+  ctx.fillStyle='#F0A030'; ctx.fillRect(s.player.x, s.player.y, s.player.w, s.player.h);
+  ctx.fillStyle='#1B2A3A'; ctx.fillRect(s.player.x+4, s.player.y+4,6,6);
+  ctx.fillStyle='#fff'; ctx.fillRect(s.player.x+5,s.player.y+5,2,2); ctx.fillRect(s.player.x+9,s.player.y+5,2,2);
+  ctx.fillStyle='rgba(0,0,0,0.25)'; ctx.fillRect(s.player.x+2,H-10, s.player.w-4,3);
+
+  // Draw obstacles
+  ctx.fillStyle='#ef4444';
+  s.obstacles.forEach(o=>{
+    ctx.fillRect(o.x,o.y,o.w,o.h);
+    ctx.fillStyle='#000'; ctx.fillRect(o.x,o.y,o.w,2);
+    ctx.fillStyle='#ef4444';
+  });
+
+  s.score++;
+  ctx.fillStyle='#fff'; ctx.font='bold 11px Poppins'; ctx.textAlign='left';
+  ctx.fillText('SCORE '+Math.floor(s.score/6),10,16);
+  ctx.fillStyle='#94a3b8'; ctx.font='9px Inter';
+  ctx.fillText('Speed '+s.speed.toFixed(1),10,28);
+
+  gameRAF=requestAnimationFrame(loop);
+}
+
+document.getElementById('gameCanvas')?.addEventListener('pointerdown',()=>{
+  if(!gameState) return;
+  if(gameState.gameOver){ restartGame(); return; }
+  if(gameState.player.onGround){ gameState.player.vy=gameState.jump; playBeep(640,'square',0.07); }
+});
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){
+    const c=document.getElementById('miniGameContainer');
+    if(!c.classList.contains('hidden') && gameState && gameState.player.onGround){
+      e.preventDefault();
+      gameState.player.vy=gameState.jump; playBeep(640,'square',0.07);
+    }
+  }
+});
+</script>
+</body>
+</html>
